@@ -135,9 +135,9 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6">Stay Connected</h4>
             <div className="flex gap-4">
               {[
-                { name: 'GitHub', url: 'https://github.com' },
-                { name: 'Twitter', url: 'https://twitter.com' },
-                { name: 'LinkedIn', url: 'https://linkedin.com' }
+                { name: 'GitHub', url: 'https://github.com/Shashank9998/' },
+                // { name: 'Twitter', url: 'https://twitter.com' },
+                { name: 'LinkedIn', url: 'https://www.linkedin.com/in/shashankkumar-patel-63a333245/' }
               ].map((platform) => (
                 <motion.a
                   key={platform.name}
