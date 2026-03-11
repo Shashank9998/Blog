@@ -483,13 +483,13 @@ const Navbar = () => {
             {/* <div className="absolute bottom-10 text-gray-600 text-[10px] tracking-[0.5em] uppercase font-bold">
         Click outside or icon to close
       </div> */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
               className="absolute bottom-10 flex flex-col items-center gap-3"
             >
-              {/* એક નાની લાઈન જે ઉપર-નીચે એનિમેટ થાય */}
+              
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}
@@ -498,8 +498,8 @@ const Navbar = () => {
               <span className="text-gray-500 text-[9px] tracking-[0.6em] uppercase font-medium">
                 Swipe up to close
               </span>
-            </motion.div>
-            {/* <motion.button
+            </motion.div> */}
+            <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMobileMenuOpen(false)}
               className="absolute bottom-12 group flex flex-col items-center gap-2"
@@ -510,7 +510,7 @@ const Navbar = () => {
               <span className="text-gray-500 text-[10px] tracking-[0.3em] uppercase group-hover:text-white transition-colors">
                 Close Menu
               </span>
-            </motion.button> */}
+            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>
