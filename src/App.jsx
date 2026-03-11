@@ -272,6 +272,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
+import ScrollToTop from './components/ScrollToTop'; // Import it here
 
 // Pages
 import Home from './pages/Home';
@@ -335,6 +336,8 @@ function App() {
       </AnimatePresence>
 
       <Router>
+                  
+        <ScrollToTop />
         <div className={`transition-opacity duration-1000 ${initialLoading ? "opacity-0" : "opacity-1"}`}>
           <Navbar />
           <ToastContainer 
